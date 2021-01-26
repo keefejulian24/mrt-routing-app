@@ -41,12 +41,14 @@ Get route suggestions from source to destination without time consideration.
 Accept 2 query strings:
 - `source`: Station name (String)
 - `destination`: Station name (String)\
+
 Request Example: `http://localhost:5000/navigation?source=Cashew&destination=Hillview`.
 #### Response
 Response is an array of objects containing 3 items:
 - `route`: Station names from source to destination (Array of strings)
 - `cost`: Number of stations travelled (Integer)
 - `steps`: Instructions to be followed (Array of strings)\
+
 Response example: `[{"route":["Cashew","Hillview"],"cost":1,"steps":["Take DT line from Cashew to Hillview","You have arrived at destination"]}]`.
 
 ### GET /navigationWithTime
@@ -56,12 +58,14 @@ Accepts 3 query strings:
 - `source`: Station code (String)
 - `destination`: Station code (String)
 - `starttime`: Starting time in "YYYY-MM-DDThh:mm" format (String)\
+
 Request Example: `http://localhost:5000/navigationWithTime?source=Cashew&destination=Hillview&starttime=2021-01-01T08:00`.
 #### Response
 Response is an array of objects containing 3 items:
 - `route`: Station codes from source to destination (Array of strings)
 - `cost`: Total travel time in minutes (Integer)
 - `steps`: Instructions to be followed (Array of strings)\
+
 Response example: `[{"route":["DT2","DT3"],"cost":10,"steps":["Take DT line from Cashew to Hillview","You have arrived at destination"]}]`.\
 In case of no available routes, response will be like this: `[{"route":[],"cost":-1,"steps":["No route found"]}]`.
 
