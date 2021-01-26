@@ -55,8 +55,8 @@ Response example: `[{"route":["Cashew","Hillview"],"cost":1,"steps":["Take DT li
 Get route suggestions from source to destination with time consideration. (Bonus Problem)
 #### Request
 Accepts 3 query strings:
-- `source`: Station code (String)
-- `destination`: Station code (String)
+- `source`: Station name (String)
+- `destination`: Station name (String)
 - `starttime`: Starting time in "YYYY-MM-DDThh:mm" format (String)\
 
 Request Example: `http://localhost:5000/navigationWithTime?source=Cashew&destination=Hillview&starttime=2021-01-01T08:00`.

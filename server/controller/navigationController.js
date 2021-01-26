@@ -9,6 +9,16 @@ const { buildInstructionsWithTime } = require('../services/instructionBuilderWit
 function navigateWithoutTime(req,res) {
     let source = req.query.source;
     let destination = req.query.destination;
+
+    // check if source and destination are valid station name
+    let stations = getStationsFromMap();
+    if (!(stations.includes(source))) {
+        res.send('Source is not a valid station name');
+    }
+    if (!(stations.includes(destination))) {
+        res.send('Destination is not a valid station name');
+    }
+
     let graph = buildGraph();
     let paths = findKShortestPaths(graph, source, destination);
     let instructions = buildInstructions(paths);
@@ -21,6 +31,21 @@ function navigateWithTime(req,res) {
     let source = req.query.source;
     let destination = req.query.destination;
     let startTime = new Date(req.query.starttime);
+
+    // check if source and destination are valid station name
+    let stations = getStationsFromMap();
+    if (!(stations.includes(source))) {
+      res.send('Source is not a valid station name');
+    }
+    if (!(stations.includes(destination))) {
+        res.send('Destination is not a valid station name');
+    }
+
+    // check if start time is a valid date
+    if (isNaN(startTime)) {
+        res.send('Start time is not a valid date');
+    }
+
     let graph = buildGraphWithTime(startTime);
     let paths = findKShortestPathsWithTime(graph, source, destination);
     let instructions = buildInstructionsWithTime(paths);

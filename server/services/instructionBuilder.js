@@ -13,6 +13,9 @@ function buildInstructions(paths) {
         // If length is 1, it means the source is the destination
         if (route.length == 1) {
             steps.push(`You are already at destination`);
+        // If length is 0, it means no available route
+        } else if (route.length == 0) {
+            steps.push('No route found');
         } else {
             let previousLine = null;
             // Iterate through list of stations in the path
