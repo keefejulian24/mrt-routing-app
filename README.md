@@ -22,6 +22,9 @@ Bonus: The routing service should take into account travel times which are chang
 - Changing line twice in a row is not allowed. Example: NS24 => NE6 => CC1 (All are Dhoby Ghaut).
 - Up to 5 route suggestions are returned.
 
+## Others
+- This app uses converted station map data in JSON format ("stationMap.json").
+
 # System Requirements
 The system requires npm and Node.js installed.
 
