@@ -1,0 +1,27 @@
+[
+    {
+        "route":["DT10","DT11","NS21","NS22"],
+        "cost":37,
+        "steps":["Take DT line from Stevens to Newton","Change from DT line to NS line","Take NS line from Newton to Orchard","You have arrived at destination"]
+    },
+    {
+        "route":["DT10","DT11","DT12","NE7","NE6","NS24","NS23","NS22"],
+        "cost":86,
+        "steps":["Take DT line from Stevens to Newton","Take DT line from Newton to Little India","Change from DT line to NE line","Take NE line from Little India to Dhoby Ghaut","Change from NE line to NS line","Take NS line from Dhoby Ghaut to Somerset","Take NS line from Somerset to Orchard","You have arrived at destination"]
+    },
+    {
+        "route":["DT10","DT11","DT12","DT13","DT14","EW12","EW13","NS25","NS24","NS23","NS22"],
+        "cost":116,
+        "steps":["Take DT line from Stevens to Newton","Take DT line from Newton to Little India","Take DT line from Little India to Rochor","Take DT line from Rochor to Bugis","Change from DT line to EW line","Take EW line from Bugis to City Hall","Change from EW line to NS line","Take NS line from City Hall to Dhoby Ghaut","Take NS line from Dhoby Ghaut to Somerset","Take NS line from Somerset to Orchard","You have arrived at destination"]
+    },
+    {
+        "route":["DT10","DT9","CC19","CC17","CC16","CC15","NS17","NS18","NS19","NS20","NS21","NS22"],
+        "cost":130,
+        "steps":["Take DT line from Stevens to Botanic Gardens","Change from DT line to CC line","Take CC line from Botanic Gardens to Caldecott","Take CC line from Caldecott to Marymount","Take CC line from Marymount to Bishan","Change from CC line to NS line","Take NS line from Bishan to Braddell","Take NS line from Braddell to Toa Payoh","Take NS line from Toa Payoh to Novena","Take NS line from Novena to Newton","Take NS line from Newton to Orchard","You have arrived at destination"]
+    },
+    {
+        "route":["DT10","DT11","DT12","DT13","DT14","DT15","CC4","CC3","CC2","CC1","NS24","NS23","NS22"],
+        "cost":134,
+        "steps":["Take DT line from Stevens to Newton","Take DT line from Newton to Little India","Take DT line from Little India to Rochor","Take DT line from Rochor to Bugis","Take DT line from Bugis to Promenade","Change from DT line to CC line","Take CC line from Promenade to Esplanade","Take CC line from Esplanade to Bras Basah","Take CC line from Bras Basah to Dhoby Ghaut","Change from CC line to NS line","Take NS line from Dhoby Ghaut to Somerset","Take NS line from Somerset to Orchard","You have arrived at destination"]
+    }
+]
